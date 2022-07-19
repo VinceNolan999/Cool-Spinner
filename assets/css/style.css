@@ -13,6 +13,7 @@
     overflow: hidden;
     position: relative;
     
+    
 }
 
 .spinner-sector {
@@ -24,8 +25,12 @@
     mix-blend-mode: multiply;
 }
 
+.spinner-text {
+    animation: loading-opacity 2s ease-out infinite;
+ }
+
 .spinner-sector-blue {
-    animation: rotate 1s ease infinite;
+    
     border-top: 15px solid lightblue;
 }
 
@@ -47,4 +52,18 @@
 @keyframes rotate {
     from {transform: rotate(0); }
     to {transform: rotate(360deg); }
+}
+
+@keyframes loading-opacity {
+    0% {
+        opacity: 1;
+    }
+
+    25%, 75% {
+        opacity: .5;
+    }
+
+    50% {
+        opacity: .1;
+    }
 }
