@@ -26,27 +26,27 @@
 }
 
 .spinner-text {
-    animation: loading-opacity 2s ease-out infinite;
+    animation: loading-opacity 3s ease-in-out infinite;
  }
 
 .spinner-sector-blue {
-    
+    animation: rotate 1.5s ease infinite;
     border-top: 15px solid lightblue;
 }
 
 .spinner-sector-red {
-    animation: rotate 1.5s ease-in infinite;
+    animation: rotate 2s ease-in infinite;
     border-right: 15px solid rgb(252, 105, 105);   
 }
 
 .spinner-sector-green {
-    animation: rotate 2s ease-out infinite;
+    animation: rotate 2.5s ease-out infinite;
     border-bottom: 15px solid lightgreen;
 }
 
 .spinner-sector-yellow {
-    animation: rotate 2.5s ease-in-out infinite;
-    border-top: 15px solid yellow;
+    animation: rotate 3s ease-in-out infinite;
+    border-left: 15px solid yellow;
 }
 
 @keyframes rotate {
@@ -55,7 +55,7 @@
 }
 
 @keyframes loading-opacity {
-    0% {
+    0%, 100% {
         opacity: 1;
     }
 
